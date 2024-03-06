@@ -1,0 +1,326 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.hasura",
+    "module": "ndc-app",
+    "version": "2.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.hasura",
+          "module": "ndc-sqlgen",
+          "version": {
+            "requires": "2.0.1"
+          }
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-bom",
+          "version": {
+            "requires": "3.1.0.Final"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-agroal"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-arc"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-cache"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-kotlin"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-micrometer-registry-prometheus"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-resteasy-reactive"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-resteasy-reactive-jackson"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-smallrye-fault-tolerance"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-smallrye-openapi"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-vertx"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-reactive-routes"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-logging-json"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-opentelemetry"
+        },
+        {
+          "group": "io.opentelemetry",
+          "module": "opentelemetry-extension-kotlin"
+        },
+        {
+          "group": "io.opentelemetry",
+          "module": "opentelemetry-extension-trace-propagators"
+        },
+        {
+          "group": "io.opentelemetry.instrumentation",
+          "module": "opentelemetry-jdbc"
+        },
+        {
+          "group": "io.vertx",
+          "module": "vertx-web",
+          "version": {
+            "strictly": "4.3.8",
+            "requires": "4.3.8"
+          }
+        },
+        {
+          "group": "org.yaml",
+          "module": "snakeyaml",
+          "version": {
+            "strictly": "2.0",
+            "requires": "2.0"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-jdbc",
+          "version": {
+            "requires": "6.0.8"
+          }
+        },
+        {
+          "group": "org.bitbucket.b_c",
+          "module": "jose4j",
+          "version": {
+            "requires": "0.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.22"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ndc-app-2.0.1.jar",
+          "url": "ndc-app-2.0.1.jar",
+          "size": 433893,
+          "sha512": "9a733d2d31d7a307bc783876e570f1289518670a3441d824332b71afd7d57046588dfd3b306d184a3e6e4ad9ededc46d795115881bdf6093c2b893a032960a4a",
+          "sha256": "25b5b950c2f672d5d6e05f7f1a083626560413fabc15555569506a53d264245a",
+          "sha1": "4bf7fee6cb2339f64d2a9c9dfc4dfdd662c475b6",
+          "md5": "9b38138d753e1668ec40f1181c7cd413"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.hasura",
+          "module": "ndc-sqlgen",
+          "version": {
+            "requires": "2.0.1"
+          }
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-bom",
+          "version": {
+            "requires": "3.1.0.Final"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-agroal"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-arc"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-cache"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-kotlin"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-micrometer-registry-prometheus"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-resteasy-reactive"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-resteasy-reactive-jackson"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-smallrye-fault-tolerance"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-smallrye-openapi"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-vertx"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-reactive-routes"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-logging-json"
+        },
+        {
+          "group": "io.quarkus",
+          "module": "quarkus-opentelemetry"
+        },
+        {
+          "group": "io.opentelemetry",
+          "module": "opentelemetry-extension-kotlin"
+        },
+        {
+          "group": "io.opentelemetry",
+          "module": "opentelemetry-extension-trace-propagators"
+        },
+        {
+          "group": "io.opentelemetry.instrumentation",
+          "module": "opentelemetry-jdbc"
+        },
+        {
+          "group": "io.vertx",
+          "module": "vertx-web",
+          "version": {
+            "strictly": "4.3.8",
+            "requires": "4.3.8"
+          }
+        },
+        {
+          "group": "org.yaml",
+          "module": "snakeyaml",
+          "version": {
+            "strictly": "2.0",
+            "requires": "2.0"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-jdbc",
+          "version": {
+            "requires": "6.0.8"
+          }
+        },
+        {
+          "group": "org.bitbucket.b_c",
+          "module": "jose4j",
+          "version": {
+            "requires": "0.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.22"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ndc-app-2.0.1.jar",
+          "url": "ndc-app-2.0.1.jar",
+          "size": 433893,
+          "sha512": "9a733d2d31d7a307bc783876e570f1289518670a3441d824332b71afd7d57046588dfd3b306d184a3e6e4ad9ededc46d795115881bdf6093c2b893a032960a4a",
+          "sha256": "25b5b950c2f672d5d6e05f7f1a083626560413fabc15555569506a53d264245a",
+          "sha1": "4bf7fee6cb2339f64d2a9c9dfc4dfdd662c475b6",
+          "md5": "9b38138d753e1668ec40f1181c7cd413"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ndc-app-2.0.1-sources.jar",
+          "url": "ndc-app-2.0.1-sources.jar",
+          "size": 401531,
+          "sha512": "1d3bdb6540922fbd62640b8cce66a3829ce9826f4bda5220a7b4771daf2dbbe5851018e9430405dbdd8b2c1c9ff7f0da5a81f835a3dc63e0d03b8bca18da67c5",
+          "sha256": "5a46833874544bf85afbf6aea07760b53cda258abaa43ce769900bab0eb373f5",
+          "sha1": "85fcdb9e3c162680f6875369e69c0201f5883341",
+          "md5": "d143b53602685256934a0bce477638d1"
+        }
+      ]
+    }
+  ]
+}
