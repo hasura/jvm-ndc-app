@@ -1,0 +1,20 @@
+{
+  "table": [
+    "Artist"
+  ],
+  "table_relationships": [],
+  "query": {
+    "fields": {
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "column_type": "string"
+      },
+      "ArtistId": {
+        "type": "column",
+        "column": "ArtistId",
+        "column_type": "integer"
+      }
+    }
+  }
+}
